@@ -1,0 +1,34 @@
+.posicao{
+   text-align : center;
+   padding : 50px;
+}
+
+.recents{
+  width:655px;
+  height:50px;
+}
+
+.subhead {
+text-align: left;
+border-bottom: 1px solid #ddd;
+padding-top: 10px;
+margin-bottom: 10px;
+}
+.subhead h1 {
+font-size: 60px;
+}
+.subhead p {
+margin-bottom: 20px;
+}
+
+.menu-padd{
+padding-left : 100px;
+}
+
+.product{
+	height: 150px;
+}
+
+.icon{
+	height: 25px;
+}

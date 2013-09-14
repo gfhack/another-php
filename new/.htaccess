@@ -1,0 +1,17 @@
+php_value auto_prepend_file "/var/www/new/config/application.php"
+
+php_flag display_errors on
+
+Options -Indexes
+RewriteEngine On
+RewriteRule ^$ /new/app/ [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !/app
+RewriteRule ^(.*)$ /new/app/$1
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} !/$
+RewriteRule ^(.*)$ $1/
+DirectorySlash off
+
+/* Redirecionamento de páginas pelo htaccess english */
